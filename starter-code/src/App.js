@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bulma/css/bulma.css';
+import Title from './Components/Title';
+import FoodContainer from './Components/FoodContainer';
+import Form from './Components/Form'
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Title><h1>Iron Nutrition!</h1></Title>
+        <FoodContainer />
+        <Form />
       </div>
     );
   }
